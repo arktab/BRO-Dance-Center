@@ -1,0 +1,32 @@
+.footer{
+    height: 160px;
+    width: 100%;
+    background: $gray;
+    
+    .container{
+         height: 100%;
+        .footer__wrapper{
+            
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            
+            .footer__headline{
+               font: 400 16px/23px $font;
+
+                strong{
+                    font-weight: 700;
+                }
+            }
+
+            .footer__copyright{
+               font: 400 16px/23px $font; 
+            }
+        }
+    }
+}

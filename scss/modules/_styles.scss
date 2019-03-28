@@ -1,0 +1,22 @@
+.styles{
+    background: url('../images/styles_bg.png') no-repeat top right;
+    padding: 0 0 200px;
+    
+   
+    
+    
+    .styles__arcticle{
+        color: $black;
+        
+        .arcticle__video{
+            margin-bottom: 20px;
+        }
+        .arcticle__headline{
+            font: 700 25px/45px $font;
+             
+        }
+        .arcticle__text{
+            font: 400 16px $font;
+        }
+    }
+}

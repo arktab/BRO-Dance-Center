@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=cyrillic');
+@include font-face('icomoon', 'fonts/icomoon');
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jj660h');
+  src:  url('fonts/icomoon.eot?jj660h#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jj660h') format('truetype'),
+    url('fonts/icomoon.woff?jj660h') format('woff'),
+    url('fonts/icomoon.svg?jj660h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phoneGray:before {
+  content: "\e906";
+  color: #9d9d9d;
+}
+.icon-facebookGray:before {
+  content: "\e907";
+  color: #9d9d9d;
+}
+.icon-instagramGray:before {
+  content: "\e908";
+  color: #9d9d9d;
+}
+.icon-youtubeGray:before {
+  content: "\e909";
+  color: #9d9d9d;
+}
+.icon-email:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-map:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-youtube:before {
+  content: "\e905";
+  color: #fff;
+}
+

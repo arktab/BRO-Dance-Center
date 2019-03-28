@@ -1,0 +1,105 @@
+.registration{
+    
+    
+    .registration__wrapper{
+        height: 300px;;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $lightgray;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        font: 700 16px/23px $font;
+        position: relative;
+        
+        .container__headline{
+            height: 54px;
+            width: 51%;
+            background: $gray;
+            font: 800 40px/50px $font;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $white;
+            text-align: center;
+            margin-bottom: 30px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-70%);
+        }
+
+        .reg{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            
+            .reg__label{
+                font-weight: 400;
+                margin-bottom: 5px;
+            }
+
+            .reg__name{
+                border: 1px solid #828282;
+                font: 400 16px/26px $font;
+                margin-bottom: 20px;
+                padding-left: 10px;
+                border: 1px solid $formborder;
+                
+//                &:invalid{
+//                    border: 1px solid $invalidcol;
+//                } 
+//               
+                &:hover{
+                    border: 1px solid $validcol;
+                }
+                
+                &:valid{
+                    border: 1px solid $validcol;
+                }
+
+            }
+            
+            .reg__phonenumb{
+                border: 1px solid $formborder;
+                font: 400 16px/26px $font;
+                margin-bottom: 25px;
+                padding-left: 10px;
+                
+                &:invalid{
+                    border: 1px solid $invalidcol;
+                } 
+                
+                &:hover{
+                    border: 1px solid $validcol;
+                }
+//                &:valid{
+//                    border: 1px solid $validcol;
+//                }
+            }
+
+            .reg__text{
+
+            }
+        }
+        .reg__button{
+            width: 32.5%;
+            height: 40px;
+            font: 600 16px/26px $font;
+            color: $white;
+            background: $blue;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.teachers{
+    .teachers__header{
+        
+    }
+    
+    .teachers__profile{
+        
+        margin-bottom: 40px;
+        .profile__photo{
+            width: 180px;
+            height: 200px;
+            background: gray;
+            margin-bottom: 20px;
+        }
+        .profile__name{
+            font: 700 16px/23px $font;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .profile__info{
+            font: 400 16px/23px $font;
+            color: black;
+            margin-bottom: 15px;
+            height: 70px;
+        }
+        .profile__social{
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-around flex-start;
+            
+            .social__links{
+                display: block;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin-right: 5px;
+                line-height: 33px;
+                &:hover{
+                    background: $lightblue;
+                }
+                .social__icon{
+                   font-size: 16px;
+                   
+                }
+            }
+        }
+    }
+    
+}
