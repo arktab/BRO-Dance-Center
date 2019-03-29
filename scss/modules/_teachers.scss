@@ -4,13 +4,20 @@
     }
     
     .teachers__profile{
-        
         margin-bottom: 40px;
+        
+            &:hover .profile__photo{
+            filter: none;
+            -webkit-filter: grayscale(0);
+        }
+
         .profile__photo{
             width: 180px;
             height: 200px;
             background: gray;
             margin-bottom: 20px;
+            filter: gray;
+            -webkit-filter: grayscale(1);
         }
         .profile__name{
             font: 700 16px/23px $font;
@@ -29,8 +36,10 @@
             display: -ms-flex;
             display: -o-flex;
             display: flex;
-            justify-content: space-around flex-start;
+            justify-content: flex-start;    
+            filter: gray;
             
+             
             .social__links{
                 display: block;
                 width: 30px;
@@ -42,8 +51,10 @@
                 &:hover{
                     background: $lightblue;
                 }
+                
                 .social__icon{
-                   font-size: 16px;
+                    color: aqua;
+                    font-size: 16px;
                    
                 }
             }
