@@ -23,6 +23,7 @@
                 .article__img{
                     margin: 20px 0 10px 20px;
                 }
+                 
                 .article__img--logo{
                     width: 278px;
                     height: 174px;
@@ -31,13 +32,16 @@
                     margin: 0 20px 28px 0;
                     
                 }
+                 
                 .article__text{
                     text-align: left;
                 }
+                 
                  &:first-child{
                      flex-direction: row;
                  }
              }
+            
              .aboutus__labels{
                 margin-top: 30px;
                 display: -webkit-flex;

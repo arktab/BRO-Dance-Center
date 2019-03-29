@@ -1,8 +1,26 @@
 .styles{
-    background: url('../images/styles_bg.png') no-repeat top right;
     padding: 0 0 200px;
+    position: relative;
     
-   
+    perspective: inherit;
+    transform-style: preserve-3d;
+    
+    
+    .header__wrapper:before{
+            content: '';
+            @include pos($t:0,$r:0,$b:0,$l:0);
+            display: block;
+            width: 100%;
+            min-height: 30vh;
+            background-image: url('../images/styles_bg.png');// no-repeat top right;
+            background-repeat: no-repeat;
+            transform-origin: center;
+            transform: translateZ(-1px) scale(2);
+            z-index: -1; 
+        }
+             
+            
+    
     
     
     .styles__arcticle{
@@ -11,10 +29,12 @@
         .arcticle__video{
             margin-bottom: 20px;
         }
+        
         .arcticle__headline{
             font: 700 25px/45px $font;
              
         }
+        
         .arcticle__text{
             font: 400 16px $font;
         }
