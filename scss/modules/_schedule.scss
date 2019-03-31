@@ -2,7 +2,7 @@
     position: relative;
     
     .schedule__bg{
-         @include pos($l:0,$b:-300px);
+         @include pos($l:0,$b:0px);
          width: 100%;
          height: 100%;
          z-index: -1;
@@ -17,8 +17,8 @@
         width: 100%;
     .schedule__table{
             display: grid;
-            grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1.04fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             font: 400 16px/23px $font;
             color: $black;
             grid-gap: 7px 20px;
