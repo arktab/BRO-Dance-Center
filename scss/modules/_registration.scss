@@ -1,8 +1,17 @@
-.registration{
+.registration {
+    position: relative;
     
-    
-    .registration__wrapper{
-        height: 300px;;
+    .registration__bg {
+        @include pos($l: 0, $b: 0);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url('../images/teachers__bg.png') no-repeat bottom left;
+        background-size: contain;
+    }
+
+    .registration__wrapper {
+        height: 300px;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -15,8 +24,8 @@
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
         font: 700 16px/23px $font;
         position: relative;
-        
-        .container__headline{
+
+        .container__headline {
             height: 54px;
             width: 51%;
             background: $gray;
@@ -32,7 +41,7 @@
             transform: translateX(-50%) translateY(-70%);
         }
 
-        .reg{
+        .reg {
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flex;
@@ -40,56 +49,56 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 50px;
-            
-            .reg__label{
+
+            .reg__label {
                 font-weight: 400;
                 margin-bottom: 5px;
             }
 
-            .reg__name{
+            .reg__name {
                 border: 1px solid #828282;
                 font: 400 16px/26px $font;
                 margin-bottom: 20px;
                 padding-left: 10px;
                 border: 1px solid $formborder;
-                
-//                &:invalid{
-//                    border: 1px solid $invalidcol;
-//                } 
-//               
-                &:hover{
+
+                //                &:invalid{
+                //                    border: 1px solid $invalidcol;
+                //                } 
+                //               
+                &:hover {
                     border: 1px solid $validcol;
                 }
-                
-                &:valid{
+
+                &:valid {
                     border: 1px solid $validcol;
                 }
 
             }
-            
-            .reg__phonenumb{
+
+            .reg__phonenumb {
                 border: 1px solid $formborder;
                 font: 400 16px/26px $font;
                 margin-bottom: 25px;
                 padding-left: 10px;
-                
-                &:invalid{
+
+                &:invalid {
                     border: 1px solid $invalidcol;
-                } 
-                
-                &:hover{
+                }
+
+                &:hover {
                     border: 1px solid $validcol;
                 }
-//                &:valid{
-//                    border: 1px solid $validcol;
-//                }
+
+                //                &:valid{
+                //                    border: 1px solid $validcol;
+                //                }
             }
 
-            .reg__text{
-
-            }
+            .reg__text {}
         }
-        .reg__button{
+
+        .reg__button {
             width: 32.5%;
             height: 40px;
             font: 600 16px/26px $font;

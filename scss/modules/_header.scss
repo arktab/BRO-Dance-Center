@@ -1,28 +1,29 @@
-.header{
+.header {
+position: relative;
     
-    .videobg__wrap{
+    .videobg__wrap {
         position: absolute;
-        @include pos($t:0, $l:0, $r:0, $b:0);
+        @include pos($t: 0, $l:0, $r:0, $b:0);
         width: 100%;
         height: 100vh;
-        overflow: hidden; 
+        overflow: hidden;
         z-index: 1;
-         
-        .header__videobg{
+
+        .header__videobg {
             min-height: 100%;
-            min-width: 100%;  
+            min-width: 100%;
         }
     }
-    
+
     width: 100%;
     height: 100vh;
     margin: 0 0 75px 0;
     background: url('../images/header_bg.png') no-repeat center center;
     background-size: cover;
-    color:$white; 
+    color:$white;
     font: 500 18px $font;
-    
-    &__wraper{
+
+    &__wraper {
         position: relative;
         z-index: 2;
         width: 100%;
@@ -30,17 +31,17 @@
         justify-content: space-between;
         height: inherit;
     }
-    
-    &__logo{
+
+    &__logo {
         justify-content: space-around;
-        
-        .logo__svg{
+
+        .logo__svg {
             width: 165px;
             height: 80px;
         }
     }
-    
-    .header__main{
+
+    .header__main {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -48,82 +49,112 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-  
-        .header__nav{
-             display: flex;
 
-            .nav__item{        
+        .header__nav {
+            display: flex;
+
+            .nav__item {
                 position: relative;
                 margin: 0 5px 0 8px;
-                
-                .nav__link{
+
+                .nav__link {
                     cursor: pointer;
                     color: $white;
                     padding: 0 15px;
                 }
-//                &:first-child{
-//                   padding-left: 0; 
-//                }
-//                
-                &:not(:first-child):after{
-                     content: '';
-                    @include pos($t:6px, $l:-7px);
-                      width: 1px;
-                      height: 10px;
-                      background: $white;
-                 } 
-             }
-        } 
-        
-        .header__text{
-            font: 700 22px/32px $font;
-        } 
-         
-        .header__button{
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            display: flex;
-            flex-direction: column;
-            
-            .button__text{
-                font: 800 22px/92px $font;     
+                
+                &:not(:first-child):after {
+                content: '';
+                @include pos($t: 6px, $l:-7px);
+                width: 1px;
+                height: 10px;
+                background: $white;
             }
-            .button__subscribe{
-                .registration__link{
-                    cursor: pointer;
-                    display: block;
-                    width: 180px;
-                    height: 40px;
-                    color: $white;
-                    line-height: 40px; 
+
+                .nav__link:hover {
+                    background: rgba(0, 114, 163, 0.5);
                 }
-           }
-//            .registration__link{
-//                width: 180px;
-//            }
+            } 
+
         }
-        
-        .header__social{
-            justify-content: flex-end;
-            display: flex;
-            margin-bottom: 75px;
-            .social__item{
-                margin-left: 30px;
-                font-size: 25px;
-                
-            
-                    >.social__link{
-                        display: block;
-                        line-height: 45px;
-                        text-align: center;
-                        width: 40px;
-                        height: 40px;
-                    }   
-                
+    }
+
+    .header__text {
+        font: 700 22px/32px $font;
+    }
+
+    .header__button {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+
+        .button__text {
+            font: 800 22px/92px $font;
+        }
+
+        .button__subscribe {
+            .registration__link { 
+                cursor: pointer;
+                display: block;
+                width: 180px;
+                height: 40px;
+                color: $white;
+                line-height: 40px;
             }
         }
-    }      
-    
-} 
+    }
+
+    .header__social {
+        justify-content: flex-end;
+        display: flex;
+        margin-bottom: 75px;
+
+        .social__item {
+            margin-left: 30px;
+            font-size: 25px;
+
+
+            > .social__link {
+                display: block;
+                line-height: 45px;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+
+                .icon {
+                    color: $white;
+                }
+
+                .icon-instagram:hover {
+                    color: #517fa4;
+                }
+
+                .icon-facebook:hover {
+                    color: #3b5998;
+                }
+
+                .icon-youtube:hover {
+                    color: #b31217;
+                }
+
+                .icon-phone:hover {
+                    color: #0F9D58;
+                }
+
+                .icon-email:hover {
+                    color: #5ac8fa;
+                }
+
+                .icon-map:hover {
+                    color: #F4B400;
+                    ;
+                }
+            }
+
+        }
+    }
+}
+
