@@ -52,29 +52,43 @@
 
         .header__nav {
             display: flex;
-
+ 
             .nav__item {
                 position: relative;
-                margin: 0 5px 0 8px;
 
                 .nav__link {
                     cursor: pointer;
                     color: $white;
-                    padding: 0 15px;
+                    padding: 0 30px 0 0;
+                    position: relative;
+                    overflow: hidden;
+                    transition: all .3s;
+
+                }
+
+                .nav__link:before {
+                    content: '';
+                    @include pos($t: 0, $r:15px);
+                    background: rgba(0, 114, 163, 0);
+                    width: 90%;
+                    height: 100%;
+                    margin: 0 5%;
+
                 }
 
                 &:not(:first-child):after {
                     content: '';
-                    @include pos($t: 6px, $l:-7px);
+                    @include pos($t: 6px, $l:-15px);
                     width: 1px;
                     height: 10px;
-                    background: $white;
+                    background: $white; 
                 }
 
-                .nav__link:hover {
+                
+            }
+            .nav__item:hover .nav__link:before {
                     background: rgba(0, 114, 163, 0.5);
                 }
-            }
 
         }
     }
