@@ -1,18 +1,16 @@
-.teachers{
+.teachers {
 
-    .teachers__header{
-        
-    }
-    
-    .teachers__profile{
+    .teachers__header {}
+
+    .teachers__profile {
         margin-bottom: 40px;
-        
-            &:hover .profile__photo{
+
+        &:hover .profile__photo {
             filter: none;
             -webkit-filter: grayscale(0);
         }
 
-        .profile__photo{
+        .profile__photo {
             width: 180px;
             height: 200px;
             background: gray;
@@ -20,28 +18,31 @@
             filter: gray;
             -webkit-filter: grayscale(1);
         }
-        .profile__name{
+
+        .profile__name {
             font: 700 16px/23px $font;
             color: black;
             margin-bottom: 50px;
         }
-        .profile__info{
+
+        .profile__info {
             font: 400 16px/23px $font;
             color: black;
             margin-bottom: 15px;
             height: 70px;
         }
-        .profile__social{
+
+        .profile__social {
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flex;
             display: -o-flex;
             display: flex;
-            justify-content: flex-start;    
+            justify-content: flex-start;
             filter: gray;
-            
-             
-            .social__links{
+
+
+            .social__links {
                 display: block;
                 width: 30px;
                 height: 30px;
@@ -49,18 +50,18 @@
                 text-decoration: none;
                 margin-right: 5px;
                 line-height: 33px;
-                
-                &:hover{
+
+                &:hover {
                     background: none;
                 }
-                     
 
-                
-                .icon{
+
+
+                .icon {
                     color: gray;
-                    font-size: 16px;  
+                    font-size: 16px;
                 }
-                
+
                 .icon-instagram:hover {
                     color: #517fa4;
                 }
@@ -80,5 +81,5 @@
             }
         }
     }
-    
+
 }

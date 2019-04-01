@@ -1,6 +1,6 @@
 .header {
-position: relative;
-    
+    position: relative;
+
     .videobg__wrap {
         position: absolute;
         @include pos($t: 0, $l:0, $r:0, $b:0);
@@ -62,19 +62,19 @@ position: relative;
                     color: $white;
                     padding: 0 15px;
                 }
-                
+
                 &:not(:first-child):after {
-                content: '';
-                @include pos($t: 6px, $l:-7px);
-                width: 1px;
-                height: 10px;
-                background: $white;
-            }
+                    content: '';
+                    @include pos($t: 6px, $l:-7px);
+                    width: 1px;
+                    height: 10px;
+                    background: $white;
+                }
 
                 .nav__link:hover {
                     background: rgba(0, 114, 163, 0.5);
                 }
-            } 
+            }
 
         }
     }
@@ -96,7 +96,7 @@ position: relative;
         }
 
         .button__subscribe {
-            .registration__link { 
+            .registration__link {
                 cursor: pointer;
                 display: block;
                 width: 180px;
@@ -108,13 +108,13 @@ position: relative;
     }
 
     .header__social {
-        justify-content: flex-end;
+        justify-content: space-between;
         display: flex;
         margin-bottom: 75px;
 
         .social__item {
-            margin-left: 30px;
-            font-size: 25px;
+            //margin-left: 30px;
+            font-size: 40px;
 
 
             > .social__link {
@@ -157,4 +157,3 @@ position: relative;
         }
     }
 }
-

@@ -1,28 +1,34 @@
-.styles{ 
+.styles {
     position: relative;
-    
-    .styles__bg{
-         @include pos($l:0,$b:0px);
-         width: 100%;
-         height: 100%;
-         z-index: -1;
-         background: url('../images/styles_bg.png') no-repeat bottom right;   
+
+    .styles__bg {
+        @include pos($l: 0, $t:20%);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url('../images/styles_bg.png') no-repeat bottom right;
+        overflow: hidden;
     }
 
-    .styles__arcticle{
-        color: $black;
-        
-        .arcticle__video{
-            margin-bottom: 20px;
+    .styles__arcticles {
+        position: relative;
+        .styles__arcticle {
+            color: $black;
+
+            .arcticle__video {
+                margin-bottom: 20px;
+            }
+
+            .arcticle__headline {
+                font: 700 25px/45px $font;
+
+            }
+
+            .arcticle__text {
+                font: 400 16px $font;
+            }
         }
-        
-        .arcticle__headline{
-            font: 700 25px/45px $font;
-             
-        }
-        
-        .arcticle__text{
-            font: 400 16px $font;
-        }
+
     }
+
 }

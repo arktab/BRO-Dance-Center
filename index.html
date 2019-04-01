@@ -82,12 +82,12 @@
         </div>
     </header>
     <section class="styles" id="styles">
-        <div class="styles__bg rellax" data-rellax-speed="3"></div>
+        <div class="styles__bg rellax" data-rellax-speed="5"></div>
         <div class="container row">
             <div class="row header__wrapper">
                 <div class="col-8 col-xl-2 styles__header">Стилі</div>
             </div>
-            <div class="row">
+            <div class="row styles__arcticles">
                 <div class="col-8 col-xl-3 styles__arcticle ">
                     <div class="arcticle__video">
                         <iframe width="288" height="175" src="https://www.youtube.com/embed/q7WnoOYE2zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -109,46 +109,39 @@
                     <div class="arcticle__headline">Денсхолл</div>
                     <div class="arcticle__text">Танок зародився на Ямайці. Етнічні рухи переселенців з Африки стали основою стилю. Це динамічний стиль, що розвиває свободу і розкутість людини, хто його виконує. Сьогодні денсполл захопив гововні світові танцмайданчики, тому кожний танцюрист повинен зобов'язаний вивчити пару рухів цього танцю.</div>
                 </div>
-                
+
                 <div class="col-xl-1 navbar">
-                    
-                    <div class="nav__dot"></div>
-                    <ul class="dec__dot">
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                    </ul>
-                    <div class="nav__dot"></div>
-                    <ul class="dec__dot">
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                    </ul>
-                    <div class="nav__dot"></div>
-                    <ul class="dec__dot">
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                    </ul>
-                    <div class="nav__dot"></div>
-                    <ul class="dec__dot">
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                        <li class="dec__dot--item"></li>
-                    </ul>
-                    <div class="nav__dot"></div>
+                    <div class="dotstyle dotstyle-scaleup">
+                        <ul>
+                            <li><a href="#header">
+                                    <div class="dot"></div>Головна
+                                </a></li>
+                            <li class="current"><a href="#styles">
+                                    <div class="dot"></div>Стилі
+                                </a></li>
+                            <li><a href="#schedule">
+                                    <div class="dot"></div>Розклад
+                                </a></li>
+                            <li><a href="#price">
+                                    <div class="dot"></div>Вартість
+                                </a></li>
+                            <li><a href="#aboutus">
+                                    <div class="dot"></div>Про нас
+                                </a></li>
+                            <li><a href="#teachers">
+                                    <div class="dot"></div>Викладачі
+                                </a></li>
+                            <li><a href="#registration">
+                                    <div class="dot"></div>Зареєструватися
+                                </a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                
             </div>
         </div>
     </section>
     <section class="schedule" id="schedule">
-        <div class="schedule__bg rellax" data-rellax-speed="3"></div>
+        <div class="schedule__bg rellax" data-rellax-speed="5"></div>
         <div class="row container">
             <div class="row header__wrapper">
                 <div class="col-xl-3 schedule__header">Розклад</div>
@@ -302,53 +295,109 @@
 
                     </div>
                 </div>
+
+                <div class="col-xl-1 navbar">
+                    <div class="dotstyle dotstyle-scaleup">
+                        <ul>
+                            <li><a href="#header">
+                                    <div class="dot"></div>Головна
+                                </a></li>
+                            <li><a href="#styles">
+                                    <div class="dot"></div>Стилі
+                                </a></li>
+                            <li class="current"><a href="#schedule">
+                                    <div class="dot"></div>Розклад
+                                </a></li>
+                            <li><a href="#price">
+                                    <div class="dot"></div>Вартість
+                                </a></li>
+                            <li><a href="#aboutus">
+                                    <div class="dot"></div>Про нас
+                                </a></li>
+                            <li><a href="#teachers">
+                                    <div class="dot"></div>Викладачі
+                                </a></li>
+                            <li><a href="#registration">
+                                    <div class="dot"></div>Зареєструватися
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="price" id="price">
-        <div class="price__bg rellax" data-rellax-speed="3"></div>
+        <div class="price__bg rellax" data-rellax-speed="5"></div>
         <div class="container">
             <div class="row header__wrapper">
                 <div class=" col-xl-3 price__header">Вартість</div>
                 <div class=" col-xl-5 price__text">Існує можливість оплати одноразових занять,<br> щомісячної та щоквартальної оплати
                 </div>
             </div>
-            <div class="col-6 col-xl-8 price__main">
-                <div class="price__item">
-                    <div class="price__tag price__tag--free">!</div>
-                    <div class="price__text">
-                        <div class="price__text--headline">Перше заняття безкоштовне!</div>
+            <div class="row">
+                <div class="col-6 col-xl-7 price__main">
+                    <div class="price__item">
+                        <div class="price__tag price__tag--free">!</div>
+                        <div class="price__text">
+                            <div class="price__text--headline">Перше заняття безкоштовне!</div>
+                        </div>
                     </div>
-                </div>
-                <div class="price__item">
-                    <div class="price__tag">50 грн.</div>
-                    <div class="price__text">
-                        <div class="price__text--headline"> Вартість одноразового тренування</div>
-                        Дозволяє оплатити одне заняття групової програми будь-якого стилю.
+                    <div class="price__item">
+                        <div class="price__tag">50 грн.</div>
+                        <div class="price__text">
+                            <div class="price__text--headline"> Вартість одноразового тренування</div>
+                            Дозволяє оплатити одне заняття групової програми будь-якого стилю.
+                        </div>
                     </div>
-                </div>
-                <div class="price__item">
-                    <div class="price__tag">400 грн.</div>
-                    <div class="price__text">
-                        <div class="price__text--headline">Вартість щомісячного коплексу тренувань</div>Оплата відвідування від 12 до 16 групових занять протягом одного місяця.
+                    <div class="price__item">
+                        <div class="price__tag">400 грн.</div>
+                        <div class="price__text">
+                            <div class="price__text--headline">Вартість щомісячного коплексу тренувань</div>Оплата відвідування від 12 до 16 групових занять протягом одного місяця.
+                        </div>
                     </div>
-                </div>
-                <div class="price__item">
-                    <div class="price__tag">500 грн.</div>
-                    <div class="price__text">
-                        <div class="price__text--headline">Вартість щомісячних індивідуальних тренувань</div>
+                    <div class="price__item">
+                        <div class="price__tag">500 грн.</div>
+                        <div class="price__text">
+                            <div class="price__text--headline">Вартість щомісячних індивідуальних тренувань</div>
+                        </div>
                     </div>
-                </div>
-                <div class="price__item">
-                    <div class="price__tag">1000 грн.</div>
-                    <div class="price__text">
-                        <div class="price__text--headline">Вартість квартального коплексу тренувань</div>
-                        Можливість відвідувати групові заняття протягом 3-х місяців.
+                    <div class="price__item">
+                        <div class="price__tag">1000 грн.</div>
+                        <div class="price__text">
+                            <div class="price__text--headline">Вартість квартального коплексу тренувань</div>
+                            Можливість відвідувати групові заняття протягом 3-х місяців.
+                        </div>
                     </div>
-                </div>
 
+                </div>
+                <div class="col-xl-1 navbar">
+                    <div class="dotstyle dotstyle-scaleup">
+                        <ul>
+                            <li><a href="#header">
+                                    <div class="dot"></div>Головна
+                                </a></li>
+                            <li><a href="#styles">
+                                    <div class="dot"></div>Стилі
+                                </a></li>
+                            <li><a href="#schedule">
+                                    <div class="dot"></div>Розклад
+                                </a></li>
+                            <li class="current"><a href="#price">
+                                    <div class="dot"></div>Вартість
+                                </a></li>
+                            <li><a href="#aboutus">
+                                    <div class="dot"></div>Про нас
+                                </a></li>
+                            <li><a href="#teachers">
+                                    <div class="dot"></div>Викладачі
+                                </a></li>
+                            <li><a href="#registration">
+                                    <div class="dot"></div>Зареєструватися
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
     <section class="aboutus" id="aboutus">
@@ -357,27 +406,55 @@
                 <div class="aboutus__header">Про нас</div>
             </div>
             <div class="row aboutus__main">
-                <div class="col-8 col-xl-10 aboutus__article">
-                    <img src="images/logo.svg" alt="BRO Dance Centre" class="article__img article__img--logo">
-                    <div class="article__text"> Історія танцювального центру “BRO” розпочалася і заснування брейкданс команди “Сall My Flow”. Тренування проходили в Аграрній академії м. Полтави. Проводився набір дітей для занять брейкдансу. <br>У 2012 році за ініціативою команди було проведено танцювальний фестиваль “Полтавська битва 1709”. Фестиваль відвідали танцюристи з усієї України. Також, завдяки увазі ЗМІ, фестиваль відвідала велика кількість глядачів.</div>
+                <div class="col-8 col-xl-9 article__wrapper">
+                    <div class="aboutus__article">
+                        <img src="images/logo.svg" alt="BRO Dance Centre" class="article__img article__img--logo">
+                        <div class="article__text"> Історія танцювального центру “BRO” розпочалася і заснування брейкданс команди “Сall My Flow”. Тренування проходили в Аграрній академії м. Полтави. Проводився набір дітей для занять брейкдансу. <br>У 2012 році за ініціативою команди було проведено танцювальний фестиваль “Полтавська битва 1709”. Фестиваль відвідали танцюристи з усієї України. Також, завдяки увазі ЗМІ, фестиваль відвідала велика кількість глядачів.</div>
+                    </div>
+
+
+                    <div class="aboutus__article">
+                        <img src="images/about_us/groupphoto.png" alt="" class="article__img">
+                        <div class="article__text"> Восени 2013 року, після проведення наступного фестивалю, команду було перейменована в “Beat Rhythm Organization” (BRO). <br>У 2014 році були відкриті два філіали школи районах Алмазний і 11 школа, також були відкриті тренування з хіп-хопу і дансхолу. Загальна кількість учнів становила 80 дітей. В цьому році учні школи вперше приймають участь у полтавських і українських танцювальних змаганнях. <br>2015 році була відкрита “Хіп-Хоп Академія”, де крім танцювальних занят проводилася уроки по діджеїнгу і граффіті.</div>
+                    </div>
+
+
+                    <div class="aboutus__article">
+                        <img src="images/about_us/breakleague.png" alt="" class="article__img">
+                        <div class="article__text">
+                            У 2017 році всі заняття були перенесені в центральну Полтави: BRO Dance Centre. <br>На даний момент у центрі займаються 170 дітей. <br>Увага викладачів сприяє розвитку не тільки танцювальних навичок, а й особистих якостей дітей. Колектив проводить спільні святкування, в період літніх канікул працює дитячий табір у с. Нові Санжари. <br>Учні центру неодноразово приймали участь і ставали переможцями місцевих, українських та міжнародних фестивалів:
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="col-8 col-xl-10 aboutus__article">
-                    <img src="images/about_us/groupphoto.png" alt="" class="article__img">
-                    <div class="article__text"> Восени 2013 року, після проведення наступного фестивалю, команду було перейменована в “Beat Rhythm Organization” (BRO). <br>У 2014 році були відкриті два філіали школи районах Алмазний і 11 школа, також були відкриті тренування з хіп-хопу і дансхолу. Загальна кількість учнів становила 80 дітей. В цьому році учні школи вперше приймають участь у полтавських і українських танцювальних змаганнях. <br>2015 році була відкрита “Хіп-Хоп Академія”, де крім танцювальних занят проводилася уроки по діджеїнгу і граффіті.</div>
-                </div>
-
-
-                <div class="col-8 col-xl-10 aboutus__article">
-                    <img src="images/about_us/breakleague.png" alt="" class="article__img">
-                    <div class="article__text">
-                        У 2017 році всі заняття були перенесені в центральну Полтави: BRO Dance Centre. <br>На даний момент у центрі займаються 170 дітей. <br>Увага викладачів сприяє розвитку не тільки танцювальних навичок, а й особистих якостей дітей. Колектив проводить спільні святкування, в період літніх канікул працює дитячий табір у с. Нові Санжари. <br>Учні центру неодноразово приймали участь і ставали переможцями місцевих, українських та міжнародних фестивалів:
+                <div class="col-xl-1 navbar">
+                    <div class="dotstyle dotstyle-scaleup">
+                        <ul>
+                            <li><a href="#header">
+                                    <div class="dot"></div>Головна
+                                </a></li>
+                            <li><a href="#styles">
+                                    <div class="dot"></div>Стилі
+                                </a></li>
+                            <li><a href="#schedule">
+                                    <div class="dot"></div>Розклад
+                                </a></li>
+                            <li><a href="#price">
+                                    <div class="dot"></div>Вартість
+                                </a></li>
+                            <li class="current"><a href="#aboutus">
+                                    <div class="dot"></div>Про нас
+                                </a></li>
+                            <li><a href="#teachers">
+                                    <div class="dot"></div>Викладачі
+                                </a></li>
+                            <li><a href="#registration">
+                                    <div class="dot"></div>Зареєструватися
+                                </a></li>
+                        </ul>
                     </div>
                 </div>
 
-
-                <div class="col-8 col-xl-10 aboutus__labels">
+                <div class="col-8 col-xl-9 aboutus__labels">
                     <img src="images/about_us/poltavasbattle.svg" alt="">
                     <img src="images/about_us/breakleague.svg" alt="">
                     <img src="images/about_us/breakids.svg" alt="">
@@ -385,7 +462,9 @@
                     <img src="images/about_us/ciklofazotron.svg" alt="">
                 </div>
 
+
             </div>
+
         </div>
     </section>
     <section class="teachers" id="teachers">
@@ -429,6 +508,33 @@
 
                     </ul>
                 </div>
+                <div class="col-xl-1 navbar">
+                    <div class="dotstyle dotstyle-scaleup">
+                        <ul>
+                            <li><a href="#header">
+                                    <div class="dot"></div>Головна
+                                </a></li>
+                            <li><a href="#styles">
+                                    <div class="dot"></div>Стилі
+                                </a></li>
+                            <li><a href="#schedule">
+                                    <div class="dot"></div>Розклад
+                                </a></li>
+                            <li><a href="#price">
+                                    <div class="dot"></div>Вартість
+                                </a></li>
+                            <li><a href="#aboutus">
+                                    <div class="dot"></div>Про нас
+                                </a></li>
+                            <li class="current"><a href="#teachers">
+                                    <div class="dot"></div>Викладачі
+                                </a></li>
+                            <li><a href="#registration">
+                                    <div class="dot"></div>Зареєструватися
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="teachers__profile col-xl-3">
@@ -471,7 +577,7 @@
         </div>
     </section>
     <section class="registration" id="registration">
-        <div class="registration__bg rellax" data-rellax-speed="3"></div>
+        <div class="registration__bg rellax" data-rellax-speed="2"></div>
         <div class="container">
             <div class="row">
                 <div class="col-9 col-xl-8 registration__wrapper">
@@ -498,18 +604,32 @@
             </div>
         </div>
     </footer>
+    <!--NavDots-->
+    <!--
+    <script src="js/dots.js"></script>
+    <script>
+        [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
+            new DotNav(nav, {
+                callback: function(idx) {
+                    //console.log( idx )
+                } 
+            });
+        });
+    </script>
+-->
 
     <!--Paralax-->
     <script src="js/rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
-
         rellax.refresh();
+
     </script>
 
     <!-- LiveReload Script -->
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
     </script>
 </body>
 

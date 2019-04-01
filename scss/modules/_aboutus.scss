@@ -1,48 +1,51 @@
-.aboutus{
+.aboutus {
     padding-left: 15px;
-    .container{
-        .aboutus__header{
-            
-            
-        }
-        .aboutus__main{
+
+    .container {
+
+        .aboutus__main {
             flex-direction: row;
             justify-content: flex-start;
-            
-           
-             .aboutus__article{
-                    display: -webkit-flex;
-                    display: -moz-flex;
-                    display: -ms-flex;
-                    display: -o-flex;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: row-reverse;
-                    padding-left: 0;
-            
-                .article__img{
-                    margin: 20px 0 10px 20px;
+
+
+            .aboutus__article {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                padding-left: 0;
+
+                .article__img {
+                    margin: 20px 5% 10px 20px;
                 }
-                 
-                .article__img--logo{
+
+                .article__img--logo {
                     width: 278px;
                     height: 174px;
                     background: $red;
                     padding: 42px 19px 26px 28px;
                     margin: 0 20px 28px 0;
-                    
+
                 }
-                 
-                .article__text{
+
+                .article__text {
                     text-align: left;
                 }
-                 
-                 &:first-child{
-                     flex-direction: row;
-                 }
-             }
-            
-             .aboutus__labels{
+                
+
+                &:first-child {
+                    flex-direction: row;
+                    
+                }
+                &:first-child .article__text{
+                    margin-right: 5%;  
+                }
+            }
+
+            .aboutus__labels {
                 margin-top: 30px;
                 padding: 0 60px;
                 display: -webkit-flex;
@@ -51,14 +54,12 @@
                 display: -o-flex;
                 display: flex;
                 justify-content: space-evenly;
-                
-                
+
+
             }
-            
+
         }
-            
-    } 
-        
+
+    }
+
 }
-       
-    

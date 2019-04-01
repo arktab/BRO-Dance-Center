@@ -1,48 +1,123 @@
-.navbar{
-    width: 10px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .nav__dot{
+.navbar {
+    margin: 0 auto;
+
+    .dotstyle ul {
         position: relative;
-        @include size(6px);
-        background: $gray;
-        border-radius: 50%;
-        //margin: 5px 0;
-        
-//        &:after{
-//           content: '';
-//            //@include align($vert: true, $hor: true);
-//            @include pos($t:0, $l:0);
-//            @include size(7.5px);
-//            background: #FF0000;
-//            border-radius: 50%;
-//            transform: translateX(-25%) translateY(-25%); 
-//        }
-          &:before{
-            content: '';
-            @include pos($t:0, $l:0);
-            @include size(11px);
-            border: 1px solid #FF0000;
-            border-radius: 50%;
-            transform: translateX(-25%) translateY(-25%);
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        cursor: default;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        li {
+            height: 17px;
+            width: 70px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 8px 32px;
+            cursor: pointer;
+
+
+            &:not(:last-child) .dot:after {
+                content: '';
+                top: 12px;
+                left: 34%;
+                height: 33px;
+                width: 3px;
+                position: absolute; 
+                background: url('../images/dots.svg');
+            }
+
+
+            a {
+                text-decoration: none;
+                font-family: $font;
+                font-size: 14px;
+                color: $gray;
+
+                &:hover {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+
+
+            a .dot {
+                top: 24%;
+                left: -20px;
+                width: 9px;
+                height: 9px;
+                outline: none;
+                border-radius: 50%;
+                background-color: rgba(157, 157, 157, 1);
+                //text-indent: -999em;
+                cursor: pointer;
+                position: absolute;
+
+                &:focus {
+                    outline: none;
+                }
+            }
         }
-        
-        &:hover{
-            
+
+        .current {
+            a {
+                font-size: 16px;
+                font-weight: 700;
+                color: #f00;
+            }
+
+            a .dot {
+                background-color: #F00;
+            }
         }
+
     }
-    .dec__dot{
-        .dec__dot--item{
-            @include size(3px);
-            background: $gray;
-            border-radius: 50%;
-            margin: 5px 0;
-        }
-    }
+
+
+
+    //SCALE UP
+
+    //    .dotstyle-scaleup li a {
+    //        -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+    //        transition: transform 0.3s ease, background-color 0.3s ease;
+    //    }
+    //
+    //    .dotstyle-scaleup li a:hover,
+    //    .dotstyle-scaleup li a:focus {
+    //        background-color: #f00;
+    //    }
+    //
+    //    .dotstyle-scaleup li.current a {
+    //        background-color: #f00;
+    //        -webkit-transform: scale(1.4);
+    //        transform: scale(1.4);
+    //    }
+    //
+    //    /* Stroke */
+    //
+    //    .dotstyle-stroke li a {
+    //        //box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    //        -webkit-transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    //        transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    //    }
+    //
+    //    .dotstyle-stroke li a:hover,
+    //    .dotstyle-stroke li a:focus {
+    //        background-color: #f00;
+    //    }
+    //
+    //    .dotstyle-stroke li.current a {
+    //        background-color: transparent;
+    //        box-shadow: 0 0 0 2px white;
+    //    }
+
+
 }
