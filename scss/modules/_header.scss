@@ -52,9 +52,10 @@
 
         .header__nav {
             display: flex;
- 
+
             .nav__item {
                 position: relative;
+                z-index: 1;
 
                 .nav__link {
                     cursor: pointer;
@@ -63,6 +64,7 @@
                     position: relative;
                     overflow: hidden;
                     transition: all .3s;
+                   
 
                 }
 
@@ -73,7 +75,7 @@
                     width: 90%;
                     height: 100%;
                     margin: 0 5%;
-
+                    z-index: -1;
                 }
 
                 &:not(:first-child):after {
@@ -81,14 +83,15 @@
                     @include pos($t: 6px, $l:-15px);
                     width: 1px;
                     height: 10px;
-                    background: $white; 
+                    background: $white;
                 }
 
-                
+
             }
+
             .nav__item:hover .nav__link:before {
-                    background: rgba(0, 114, 163, 0.5);
-                }
+                background: rgba(0, 114, 163, 0.5);
+            }
 
         }
     }
