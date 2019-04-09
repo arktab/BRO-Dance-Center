@@ -52,12 +52,14 @@
 
         .header__nav {
             display: flex;
+            text-align: left;
 
             .nav__item {
                 position: relative;
                 z-index: 1;
 
                 .nav__link {
+                    width: 110px;
                     cursor: pointer;
                     color: $white;
                     padding: 0 30px 0 0;

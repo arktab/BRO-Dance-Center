@@ -34,7 +34,7 @@
                     <li class="nav__item"><a href="#styles" class="nav__link">Стилі</a></li>
                     <li class="nav__item"><a href="#schedule" class="nav__link">Розклад</a></li>
                     <li class="nav__item"><a href="#price" class="nav__link">Вартість</a></li>
-                    <li class="nav__item"><a href="#aboutus" class="nav__link">Про нас</a></li>
+                    <li class="nav__item"><a href="#aboutus" class="nav__link">Про нас </a></li>
                     <li class="nav__item"><a href="#teachers" class="nav__link">Викладачі</a></li>
                 </ul>
                 <div class="header__text">
@@ -79,10 +79,20 @@
                     </li>
                 </ul>
             </div>
+            <!-- back to top button -->
+            <a id="button"></a>
         </div>
     </header>
+
+
     <section class="styles" id="styles">
-        <div class="styles__bg rellax" data-rellax-speed="5"></div>
+        <div class="styles__bg" id="scene">
+            <div class="paralax__img" data-depth="0.2">
+                <img src="images/styles_bg.png" alt="">
+            </div>
+        </div>
+
+
         <div class="container row">
             <div class="row header__wrapper">
                 <div class="col-8 col-xl-2 styles__header">Стилі</div>
@@ -110,7 +120,7 @@
                     <div class="arcticle__text">Танок зародився на Ямайці. Етнічні рухи переселенців з Африки стали основою стилю. Це динамічний стиль, що розвиває свободу і розкутість людини, хто його виконує. Сьогодні денсполл захопив гововні світові танцмайданчики, тому кожний танцюрист повинен зобов'язаний вивчити пару рухів цього танцю.</div>
                 </div>
 
-<!--
+                <!--
                 <div class="col-xl-1 navbar">
                     <div class="dotstyle dotstyle-scaleup">
                         <ul>
@@ -298,7 +308,7 @@
                     </div>
                 </div>
 
-<!--
+                <!--
                 <div class="col-xl-1 navbar">
                     <div class="dotstyle dotstyle-scaleup">
                         <ul>
@@ -374,7 +384,7 @@
                     </div>
 
                 </div>
-<!--
+                <!--
                 <div class="col-xl-1 navbar">
                     <div class="dotstyle dotstyle-scaleup">
                         <ul>
@@ -432,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-<!--
+                <!--
                 <div class="col-xl-1 navbar">
                     <div class="dotstyle dotstyle-scaleup">
                         <ul>
@@ -516,7 +526,7 @@
 
                     </ul>
                 </div>
-<!--
+                <!--
                 <div class="col-xl-1 navbar">
                     <div class="dotstyle dotstyle-scaleup">
                         <ul>
@@ -614,33 +624,38 @@
             </div>
         </div>
     </footer>
-    <!--NavDots-->
-    <!--
-    <script src="js/dots.js"></script>
+    <!--navbutton.js-->
     <script>
-        [].slice.call(document.querySelectorAll('.dotstyle > ul')).forEach(function(nav) {
-            new DotNav(nav, {
-                callback: function(idx) {
-                    //console.log( idx )
-                } 
-            });
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
         });
-    </script>
--->
 
-    <!--Paralax-->
-    <script src="js/rellax.min.js"></script>
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+
+    </script>
+
+    <!--ParallaxJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!--    <script src="js/parallax.js"></script>-->
     <script>
-        var rellax = new Rellax('.rellax');
-        rellax.refresh();
+        // Pretty simple huh?
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
 
     </script>
 
-    <!-- LiveReload Script -->
-    <script>
-        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
-    </script>
 </body>
 
 </html>
