@@ -80,15 +80,13 @@
                 </ul>
             </div>
             <!-- back to top button -->
-           <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
         </div>
     </header>
-
-
     <section class="styles" id="styles">
         <div class="styles__bg" id="scene">
             <div class="paralax__img" data-depth="0.2">
-                <img src="images/styles_bg.png" alt="">
+                <img src="images/styles_bg.png" alt="" class="rellax" data-rellax-speed="7">
             </div>
         </div>
 
@@ -153,7 +151,11 @@
         </div>
     </section>
     <section class="schedule" id="schedule">
-        <div class="schedule__bg rellax" data-rellax-speed="5"></div>
+        <div class="schedule__bg" id="scene">
+            <div class="schedule__img" data-depth="0.2">
+                <img src="images/schedule__bg.png" alt="" class="rellax" data-rellax-speed="7">
+            </div>
+        </div>
         <div class="row container">
             <div class="row header__wrapper">
                 <div class="col-xl-3 schedule__header">Розклад</div>
@@ -341,7 +343,12 @@
         </div>
     </section>
     <section class="price" id="price">
-        <div class="price__bg rellax" data-rellax-speed="5"></div>
+        <div class="price__bg" id="scene">
+            <div class="price__img" data-depth="0.2">
+                <img src="images/price_bg.png" alt="" class="rellax" data-rellax-speed="6">
+            </div>
+        </div>
+
         <div class="container">
             <div class="row header__wrapper">
                 <div class=" col-xl-3 price__header">Вартість</div>
@@ -597,7 +604,12 @@
         </div>
     </section>
     <section class="registration" id="registration">
-        <div class="registration__bg rellax" data-rellax-speed="2"></div>
+       <div class="registration__bg" id="scene">
+            <div class="registration__img" data-depth="0.2">
+                <img src="images/teachers__bg.png" alt="" class="rellax" data-rellax-speed="1">
+            </div>
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-9 col-xl-8 registration__wrapper">
@@ -625,15 +637,14 @@
         </div>
     </footer>
     <!--navbutton.js-->
-    <!--    <script src="js/navbutton.js"></script>-->
     <script>
-        // When the user scrolls down 20px from the top of the document, show the button
+        // When the user scrolls down 100px from the top of the document, show the button
         window.onscroll = function() {
             scrollFunction()
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 document.getElementById("myBtn").style.display = "block";
             } else {
                 document.getElementById("myBtn").style.display = "none";
@@ -645,17 +656,24 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
     </script>
-
     <!--ParallaxJS-->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <!--    <script src="js/parallax.js"></script>-->
     <script>
         // Pretty simple huh?
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
 
+    </script>
+
+    <!--ParallaxRellaxJS-->
+    <script src="js/rellax.min.js"></script>
+    <script>
+        // Start Rellax
+        var rellax = new Rellax('.rellax');
+        // Destroy and create again parallax with previous settings
+        rellax.refresh();
     </script>
 
 
