@@ -101,6 +101,10 @@
             left: 50%;
             transform: translateX(-50%) translateY(50%);
             cursor: pointer;
+            
+            &:hover{
+                background: rgba(0, 114, 163, 1);
+            }
         }
     }
 }

@@ -35,9 +35,73 @@
     &__logo {
         justify-content: space-around;
 
-        .logo__svg {
+        .link {
+            position: relative;
             width: 165px;
             height: 80px;
+            overflow: hidden;
+
+            &:before {
+                
+                @include pos($t: 30%, $l:0);
+                width: 500px;
+                height: 25%;
+                filter: blur(13px);
+                background: rgb(131, 58, 180);
+                background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%) center center;
+                background-size: 70%;
+                opacity: .8;
+                z-index: 1;
+                 animation: disco 2s infinite linear;
+
+            }
+
+            &:hover {
+               
+                animation: bounce 1s infinite linear;
+                &:before{
+                    content: '';
+                }
+            }
+
+            .logo__svg {
+                width: 165px;
+                height: 80px;
+                cursor: pointer;
+            }
+        }
+
+        @keyframes disco {
+            0% {
+                background-position: -150% 0;
+            }
+
+            33% {
+                background-position: 150% 0;
+            }
+
+            66% {
+                background-position: -150% 0;
+            }
+
+            100% {
+                background-position: 150% 0;
+            }
+        }
+
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }
     }
 
@@ -66,7 +130,7 @@
                     position: relative;
                     overflow: hidden;
                     transition: all .3s;
-                   
+
 
                 }
 

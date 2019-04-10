@@ -4,7 +4,7 @@
 	border: 0;
 	outline: none;
 	box-sizing: border-box;
-	//transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 img {
@@ -67,10 +67,6 @@ body, html {
     text-decoration: none;
 }
 
-//[class$=__link]:hover{
-//    background: rgba(0, 114, 163, 0.5);
-//   
-//}
 
 [class$=__header]{
     font: 800 40px $font;
@@ -85,4 +81,8 @@ body, html {
 }
 section{
     padding: 0 0 200px 0;
+}
+
+button:hover{
+    background: rgba(0, 114, 163, 1);
 }
